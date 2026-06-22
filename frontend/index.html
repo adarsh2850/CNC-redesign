@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching Dreams — IT Training & Certification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem('cd-theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nb-header" id="navbar">
+
+  <!-- ── MAIN NAV ── -->
+  <div class="nb-main" id="nbMain">
+    <div class="nb-container nb-main-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nb-logo">
+        <div class="nb-logo-mark">
+          <div class="nb-logo-ring"></div>
+          <span class="nb-logo-letters">C<em>N</em></span>
+        </div>
+        <div class="nb-logo-text">
+          <span class="nb-logo-name">Coaching<strong>Dreams</strong></span>
+          <span class="nb-logo-sub">IT Training & Certification</span>
+        </div>
+      </a>
+
+      <!-- Nav links -->
+      <nav class="nb-nav" id="navLinks">
+        <a href="#home"         class="nb-link active">Home</a>
+        <a href="#services"     class="nb-link">Courses</a>
+        <a href="#about"        class="nb-link">Rack Rental</a>
+        <a href="#stats"        class="nb-link">Blog</a>
+        <a href="#process"      class="nb-link">Our Victory</a>
+        <a href="#testimonials" class="nb-link">E Certificate</a>
+        <a href="#contact"      class="nb-link">Contact</a>
+        <a href="#"             class="nb-link nb-link-login">
+          <span class="material-icons">login</span> App Login
+        </a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="nb-controls">
+        <button class="nb-search-trigger nb-theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="material-icons icon-light">dark_mode</span>
+          <span class="material-icons icon-dark">light_mode</span>
+        </button>
+        <button class="nb-search-trigger" id="searchBtn" aria-label="Search">
+          <span class="material-icons">search</span>
+        </button>
+        <button class="nb-burger" id="hamburger" aria-label="Toggle menu">
+          <span class="nb-burger-bar"></span>
+          <span class="nb-burger-bar"></span>
+          <span class="nb-burger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Search drawer -->
+    <div class="nb-search-drawer" id="searchOverlay">
+      <div class="nb-container nb-search-row">
+        <span class="material-icons nb-search-icon-sm">search</span>
+        <input type="search" id="searchInput" placeholder="Search courses, topics, certifications…" autocomplete="off" />
+        <button class="nb-search-close" id="searchClose" aria-label="Close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile drawer backdrop -->
+  <div class="nb-backdrop" id="nbBackdrop"></div>
+
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="mu-hero" id="home">
+  <div class="mu-hero-shapes">
+    <div class="mu-shape s1"></div><div class="mu-shape s2"></div><div class="mu-shape s3"></div>
+  </div>
+  <div class="mu-container mu-hero-inner">
+    <div class="mu-hero-content">
+      <div class="mu-chip mu-chip-outlined">
+        <span class="material-icons">verified</span> Trusted by 200+ Global Students
+      </div>
+      <h1 class="mu-display">Achieve Your<br/><span class="mu-text-orange">Career Goals</span><br/>With Us</h1>
+      <p class="mu-body1 mu-text-secondary">Industry-leading IT training in Networking, Security, Cloud and more. Job assurance programs with hands-on lab access and expert mentorship.</p>
+      <div class="mu-hero-actions">
+        <a href="#services" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-lg">
+          <span class="material-icons">school</span> Explore Courses
+        </a>
+        <a href="#stats" class="mu-btn mu-btn-outlined mu-btn-lg mu-btn-white">
+          <span class="material-icons">bar_chart</span> Our Results
+        </a>
+      </div>
+      <div class="mu-hero-stats">
+        <div class="mu-stat-chip"><span class="mu-stat-n">200+</span><span>Students</span></div>
+        <div class="mu-stat-divider"></div>
+        <div class="mu-stat-chip"><span class="mu-stat-n">70K+</span><span>Trained</span></div>
+        <div class="mu-stat-divider"></div>
+        <div class="mu-stat-chip"><span class="mu-stat-n">100+</span><span>Experts</span></div>
+      </div>
+    </div>
+    <div class="mu-hero-visual">
+      <div class="mu-hero-orb"><span class="material-icons">bolt</span></div>
+      <div class="mu-float-card fc1">
+        <span class="material-icons mu-text-orange">router</span>
+        <div><strong>Networking</strong><small>BGP, MPLS, SD-WAN</small></div>
+      </div>
+      <div class="mu-float-card fc2">
+        <span class="material-icons mu-text-orange">security</span>
+        <div><strong>Security</strong><small>CEH, Ethical Hacking</small></div>
+      </div>
+      <div class="mu-float-card fc3">
+        <span class="material-icons mu-text-orange">trending_up</span>
+        <div><strong>Job Assured</strong><small>Placement Support</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="mu-scroll-hint"><div class="mu-scroll-line"></div><small>Scroll</small></div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="mu-marquee">
+  <div class="mu-marquee-track">
+    <span>Networking</span><span class="dot">•</span><span>Security</span><span class="dot">•</span>
+    <span>WireShark</span><span class="dot">•</span><span>SD-WAN</span><span class="dot">•</span>
+    <span>BGP/MPLS</span><span class="dot">•</span><span>CEH</span><span class="dot">•</span>
+    <span>F5-LTM</span><span class="dot">•</span><span>F5-GTM</span><span class="dot">•</span>
+    <span>F5-ASM</span><span class="dot">•</span><span>Rack Rental</span><span class="dot">•</span>
+    <span>Networking</span><span class="dot">•</span><span>Security</span><span class="dot">•</span>
+    <span>WireShark</span><span class="dot">•</span><span>SD-WAN</span><span class="dot">•</span>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="mu-section mu-section-light" id="services">
+  <div class="mu-container">
+    <div class="mu-section-header">
+      <span class="mu-overline">What We Offer</span>
+      <h2 class="mu-h4">Our <span class="mu-text-orange">Best Services</span></h2>
+      <div class="mu-title-bar"></div>
+      <p class="mu-body1 mu-text-secondary">Industry-relevant courses with real lab access, expert instructors and job placement support.</p>
+    </div>
+
+    <!-- Job Assurance Banner -->
+    <div class="mu-paper mu-job-banner mu-elevation-2">
+      <div class="mu-job-banner-bg"></div>
+      <div class="mu-job-banner-icon"><span class="material-icons">language</span></div>
+      <div class="mu-job-banner-content">
+        <h3 class="mu-h5">Job Assurance Course</h3>
+        <p class="mu-body2">Get guaranteed placement support with our industry-connected programs. Real labs, real mentors, real results.</p>
+      </div>
+      <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange">
+        Job Assurance Course <span class="material-icons">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Services Slider -->
+    <div class="mu-services-slider">
+      <div class="mu-services-track" id="servicesTrack">
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="Networking">
+        <div class="mu-service-card-icon"><span class="material-icons">lightbulb</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">Networking</h3>
+          <p class="mu-body2">Deep Dive Training in Networking with advanced Topics "BGP" "MPLS" "MPLSL2VPN" "MPLSL3VPN" "L2TPV3" "ATOM" "Segment Routing"</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Take Your First Step <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="Security">
+        <div class="mu-service-card-icon"><span class="material-icons">lock</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">Security</h3>
+          <p class="mu-body2">Learn Multiple Technologies including Ethical Hacking, Cyber Security, Security+ and Many More...</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Learn Security <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="WireShark">
+        <div class="mu-service-card-icon"><span class="material-icons">desktop_mac</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">WireShark</h3>
+          <p class="mu-body2">Deep Packet Analysis and IPSEC Packet Encryption & Decryption in Live Network Using Encryption and Authentication Key</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Enroll In Wireshark <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="SDWAN">
+        <div class="mu-service-card-icon"><span class="material-icons">language</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">SDWAN</h3>
+          <p class="mu-body2">Learn SDWAN Scratch To Expert with All Lab Access</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Get SDWAN Training <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1 mu-card-featured" data-course="BGP/MPLS">
+        <div class="mu-service-card-icon mu-card-icon-check"><span class="material-icons">check</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">Advance BGP/MPLS</h3>
+          <p class="mu-body2">Learn how Advance BGP & MPLS used in Service Provider Network & Path Manipulation Tricks</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Learn BGP/MPLS <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="CEH">
+        <div class="mu-service-card-icon"><span class="material-icons">person</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">CEH</h3>
+          <p class="mu-body2">Learn How Things works in Certified Ethical Hacking Course and Secret of Tricks used in Hacking</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Be A Certified Hacker <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="F5-LTM">
+        <div class="mu-service-card-icon"><span class="material-icons">settings</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">F5-LTM</h3>
+          <p class="mu-body2">Master F5 Local Traffic Manager — load balancing, traffic management & application delivery.</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Learn F5-LTM <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="F5-GTM">
+        <div class="mu-service-card-icon"><span class="material-icons">settings</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">F5-GTM</h3>
+          <p class="mu-body2">Learn F5 Global Traffic Manager for DNS load balancing and intelligent request routing.</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Learn F5-GTM <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mu-service-card mu-paper mu-elevation-1" data-course="F5-ASM">
+        <div class="mu-service-card-icon"><span class="material-icons">settings</span></div>
+        <div class="mu-service-card-body">
+          <h3 class="mu-h6">F5-ASM</h3>
+          <p class="mu-body2">Web Application Firewall training with F5 Advanced Security Manager — protect apps at scale.</p>
+          <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-sm">
+            Learn F5-ASM <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="mu-section" id="about">
+  <div class="mu-container mu-about-inner">
+    <div class="mu-about-visual">
+      <div class="mu-paper mu-elevation-3 mu-about-card">
+        <div class="mu-about-graphic">
+          <div class="mu-ring r1"></div><div class="mu-ring r2"></div><div class="mu-ring r3"></div>
+          <span class="material-icons mu-about-icon">bolt</span>
+        </div>
+      </div>
+      <div class="mu-paper mu-elevation-4 mu-about-badge">
+        <span class="material-icons mu-text-orange">emoji_events</span>
+        <div><strong>Industry Leader</strong><small>Since 2018</small></div>
+      </div>
+    </div>
+    <div class="mu-about-content">
+      <span class="mu-overline">Who We Are</span>
+      <h2 class="mu-h4">Building the Future of <span class="mu-text-orange">Digital Careers</span></h2>
+      <div class="mu-title-bar mu-align-left"></div>
+      <p class="mu-body1 mu-text-secondary">We are a technology-first training institute helping professionals unlock growth through hands-on labs, industry-expert mentorship, and job placement programs.</p>
+      <p class="mu-body1 mu-text-secondary">Our mission: make enterprise-grade IT knowledge accessible to everyone — and deliver placement results every time.</p>
+      <div class="mu-pillars">
+        <div class="mu-paper mu-elevation-1 mu-pillar">
+          <span class="material-icons mu-text-orange">gps_fixed</span>
+          <div><strong>Result-Driven</strong><small>Every session backed by outcomes</small></div>
+        </div>
+        <div class="mu-paper mu-elevation-1 mu-pillar">
+          <span class="material-icons mu-text-orange">handshake</span>
+          <div><strong>Student-First</strong><small>Your success is our mission</small></div>
+        </div>
+        <div class="mu-paper mu-elevation-1 mu-pillar">
+          <span class="material-icons mu-text-orange">verified_user</span>
+          <div><strong>Certified Programs</strong><small>Industry-recognized credentials</small></div>
+        </div>
+      </div>
+      <a href="#contact" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-lg">
+        <span class="material-icons">groups</span> Work With Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="mu-section mu-section-dark" id="stats">
+  <div class="mu-container">
+    <div class="mu-section-header mu-section-header-light">
+      <span class="mu-overline mu-overline-light">By The Numbers</span>
+      <h2 class="mu-h4 mu-text-white">Successful Completion <span class="mu-text-orange">in Numbers</span></h2>
+      <div class="mu-title-bar"></div>
+      <p class="mu-body1 mu-text-dim">Real results delivered consistently across every batch we train.</p>
+    </div>
+    <div class="mu-stats-grid">
+      <div class="mu-paper mu-stat-card mu-elevation-2">
+        <span class="material-icons mu-text-orange mu-stat-icon-lg">groups</span>
+        <div class="mu-stat-number" data-target="70000">0</div><span class="mu-stat-sfx">+</span>
+        <p class="mu-body2 mu-text-dim">Products Cataloged</p>
+        <div class="mu-linear-progress"><div class="mu-linear-fill" style="width:90%"></div></div>
+      </div>
+      <div class="mu-paper mu-stat-card mu-elevation-2">
+        <span class="material-icons mu-text-orange mu-stat-icon-lg">task_alt</span>
+        <div class="mu-stat-number" data-target="2300">0</div><span class="mu-stat-sfx">+</span>
+        <p class="mu-body2 mu-text-dim">Projects Completed</p>
+        <div class="mu-linear-progress"><div class="mu-linear-fill" style="width:75%"></div></div>
+      </div>
+      <div class="mu-paper mu-stat-card mu-elevation-2">
+        <span class="material-icons mu-text-orange mu-stat-icon-lg">trending_up</span>
+        <div class="mu-stat-number" data-target="15">0</div><span class="mu-stat-sfx">%</span>
+        <p class="mu-body2 mu-text-dim">Avg. Revenue Growth</p>
+        <div class="mu-linear-progress"><div class="mu-linear-fill" style="width:60%"></div></div>
+      </div>
+      <div class="mu-paper mu-stat-card mu-elevation-2">
+        <span class="material-icons mu-text-orange mu-stat-icon-lg">public</span>
+        <div class="mu-stat-number" data-target="100">0</div><span class="mu-stat-sfx">+</span>
+        <p class="mu-body2 mu-text-dim">Team Members</p>
+        <div class="mu-linear-progress"><div class="mu-linear-fill" style="width:85%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="mu-section mu-section-light" id="process">
+  <div class="mu-container">
+    <div class="mu-section-header">
+      <span class="mu-overline">How It Works</span>
+      <h2 class="mu-h4">Our <span class="mu-text-orange">Process</span></h2>
+      <div class="mu-title-bar"></div>
+    </div>
+    <div class="mu-process-stepper">
+      <div class="mu-step">
+        <div class="mu-step-circle"><span class="material-icons">search</span></div>
+        <div class="mu-step-connector"></div>
+        <div class="mu-paper mu-elevation-1 mu-step-card">
+          <span class="mu-step-num">01</span>
+          <h3 class="mu-subtitle1">Discovery</h3>
+          <p class="mu-body2 mu-text-secondary">We assess your current skill level and career goals to craft the right learning path.</p>
+        </div>
+      </div>
+      <div class="mu-step">
+        <div class="mu-step-circle"><span class="material-icons">palette</span></div>
+        <div class="mu-step-connector"></div>
+        <div class="mu-paper mu-elevation-1 mu-step-card">
+          <span class="mu-step-num">02</span>
+          <h3 class="mu-subtitle1">Curriculum</h3>
+          <p class="mu-body2 mu-text-secondary">Structured course content with live labs, assignments and industry projects.</p>
+        </div>
+      </div>
+      <div class="mu-step">
+        <div class="mu-step-circle"><span class="material-icons">build</span></div>
+        <div class="mu-step-connector"></div>
+        <div class="mu-paper mu-elevation-1 mu-step-card">
+          <span class="mu-step-num">03</span>
+          <h3 class="mu-subtitle1">Hands-On Training</h3>
+          <p class="mu-body2 mu-text-secondary">Real rack access, live network simulations, and scenario-based learning.</p>
+        </div>
+      </div>
+      <div class="mu-step">
+        <div class="mu-step-circle mu-step-circle-last"><span class="material-icons">rocket_launch</span></div>
+        <div class="mu-paper mu-elevation-1 mu-step-card">
+          <span class="mu-step-num">04</span>
+          <h3 class="mu-subtitle1">Placement</h3>
+          <p class="mu-body2 mu-text-secondary">Resume building, mock interviews, and direct recruiter connections.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="mu-section" id="testimonials">
+  <div class="mu-container">
+    <div class="mu-section-header">
+      <span class="mu-overline">Student Stories</span>
+      <h2 class="mu-h4">Our <span class="mu-text-orange">Testimonials</span></h2>
+      <div class="mu-title-bar"></div>
+      <p class="mu-body1 mu-text-secondary">Real feedback from students who've transformed their careers with us.</p>
+    </div>
+    <div class="mu-testimonials-grid">
+      <div class="mu-paper mu-elevation-2 mu-testimonial-card">
+        <span class="material-icons mu-quote-icon">format_quote</span>
+        <p class="mu-body1">The networking course completely changed my career trajectory. I got placed in a top MNC within 3 months of completing the program. Highly recommended!</p>
+        <div class="mu-testimonial-footer">
+          <div class="mu-avatar">SM</div>
+          <div><strong class="mu-subtitle2">Sarah Mitchell</strong><small class="mu-caption mu-text-secondary">Network Engineer, TechCorp</small></div>
+          <div class="mu-rating">★★★★★</div>
+        </div>
+      </div>
+      <div class="mu-paper mu-elevation-4 mu-testimonial-card mu-testimonial-featured">
+        <span class="material-icons mu-quote-icon">format_quote</span>
+        <p class="mu-body1">BGP/MPLS course was incredible. The hands-on lab access with real rack equipment gave me practical experience no other institute could provide.</p>
+        <div class="mu-testimonial-footer">
+          <div class="mu-avatar">JK</div>
+          <div><strong class="mu-subtitle2">James Keller</strong><small class="mu-caption">Senior Network Architect</small></div>
+          <div class="mu-rating">★★★★★</div>
+        </div>
+      </div>
+      <div class="mu-paper mu-elevation-2 mu-testimonial-card">
+        <span class="material-icons mu-quote-icon">format_quote</span>
+        <p class="mu-body1">CEH certification training was world-class. The instructors have real industry experience and the content is always up-to-date with latest threats.</p>
+        <div class="mu-testimonial-footer">
+          <div class="mu-avatar">AP</div>
+          <div><strong class="mu-subtitle2">Anika Patel</strong><small class="mu-caption mu-text-secondary">Cybersecurity Analyst</small></div>
+          <div class="mu-rating">★★★★★</div>
+        </div>
+      </div>
+      <div class="mu-paper mu-elevation-2 mu-testimonial-card">
+        <span class="material-icons mu-quote-icon">format_quote</span>
+        <p class="mu-body1">SD-WAN course with real lab access was exactly what I needed. Got a 40% salary hike after completing the certification. Worth every rupee!</p>
+        <div class="mu-testimonial-footer">
+          <div class="mu-avatar">RN</div>
+          <div><strong class="mu-subtitle2">Rahul Nair</strong><small class="mu-caption mu-text-secondary">Cloud Network Specialist</small></div>
+          <div class="mu-rating">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="mu-cta-section">
+  <div class="mu-cta-shapes"><div class="mu-cs1"></div><div class="mu-cs2"></div></div>
+  <div class="mu-container mu-cta-inner">
+    <div>
+      <h2 class="mu-h4 mu-text-white">Ready to Start Your IT Career?</h2>
+      <p class="mu-body1" style="color:rgba(255,255,255,0.8)">Join 200+ students already training with Coaching Dreams. Enroll today.</p>
+    </div>
+    <div class="mu-cta-btns">
+      <a href="#contact" class="mu-btn mu-btn-white mu-btn-lg">
+        <span class="material-icons">rocket_launch</span> Enroll Now
+      </a>
+      <a href="tel:+919625343392" class="mu-btn mu-btn-outlined-white mu-btn-lg">
+        <span class="material-icons">phone</span> Call Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="mu-section mu-section-light" id="contact">
+  <div class="mu-container mu-contact-inner">
+    <div class="mu-contact-info">
+      <span class="mu-overline">Get In Touch</span>
+      <h2 class="mu-h4">Let's Start a <span class="mu-text-orange">Conversation</span></h2>
+      <div class="mu-title-bar mu-align-left"></div>
+      <p class="mu-body1 mu-text-secondary">Have a question about our courses? We respond within 24 hours.</p>
+      <div class="mu-contact-items">
+        <div class="mu-contact-item">
+          <div class="mu-contact-icon-wrap"><span class="material-icons">email</span></div>
+          <div><strong>Email</strong><small>hello@coachingdreams.com</small></div>
+        </div>
+        <div class="mu-contact-item">
+          <div class="mu-contact-icon-wrap"><span class="material-icons">phone</span></div>
+          <div><strong>Phone</strong><small>+91 962 534 3392</small></div>
+        </div>
+        <div class="mu-contact-item">
+          <div class="mu-contact-icon-wrap"><span class="material-icons">location_on</span></div>
+          <div><strong>Location</strong><small>Delhi, India & Online Worldwide</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="mu-paper mu-elevation-3 mu-contact-form-wrap">
+      <form class="mu-contact-form" id="contactForm" novalidate>
+        <div class="mu-form-row">
+          <div class="mu-text-field">
+            <label>First Name</label>
+            <input type="text" name="fname" placeholder="John" required />
+          </div>
+          <div class="mu-text-field">
+            <label>Last Name</label>
+            <input type="text" name="lname" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="mu-text-field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="john@company.com" required />
+        </div>
+        <div class="mu-text-field">
+          <label>Course Interested In</label>
+          <select name="service">
+            <option value="">Select a course...</option>
+            <option>Networking</option><option>Security</option>
+            <option>WireShark</option><option>SDWAN</option>
+            <option>Advance BGP/MPLS</option><option>CEH</option>
+            <option>F5-LTM</option><option>F5-GTM</option><option>F5-ASM</option>
+          </select>
+        </div>
+        <div class="mu-text-field">
+          <label>Your Message</label>
+          <textarea name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+        </div>
+        <button type="submit" class="mu-btn mu-btn-contained mu-btn-orange mu-btn-lg mu-btn-full">
+          <span class="material-icons">send</span> Send Message
+        </button>
+        <div class="mu-form-success" id="formSuccess" hidden>
+          <span class="material-icons">check_circle</span> Message sent! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="mu-footer">
+  <div class="mu-container mu-footer-inner">
+    <div class="mu-footer-brand">
+      <a href="#" class="mu-logo mu-logo-row">
+        <div class="mu-logo-badge mu-logo-badge-dark"><span>C<em>N</em></span></div>
+        <span class="mu-logo-label mu-text-white">Coaching<b>Dreams</b></span>
+      </a>
+      <p class="mu-body2 mu-text-dim">Industry-leading IT training for networking, security and cloud professionals.</p>
+      <div class="mu-footer-socials">
+        <a href="#" class="mu-icon-btn" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+        <a href="#" class="mu-icon-btn" aria-label="YouTube"><span class="material-icons">play_circle</span></a>
+        <a href="#" class="mu-icon-btn" aria-label="LinkedIn"><span class="material-icons">work</span></a>
+      </div>
+    </div>
+    <div class="mu-footer-links">
+      <div class="mu-footer-col">
+        <h4 class="mu-subtitle2">Courses</h4>
+        <a href="#">Networking</a><a href="#">Security</a><a href="#">WireShark</a>
+        <a href="#">SDWAN</a><a href="#">BGP/MPLS</a><a href="#">CEH</a>
+      </div>
+      <div class="mu-footer-col">
+        <h4 class="mu-subtitle2">Company</h4>
+        <a href="#">About Us</a><a href="#">Our Team</a><a href="#">Blog</a>
+        <a href="#">Careers</a><a href="#">Rack Rental</a>
+      </div>
+      <div class="mu-footer-col">
+        <h4 class="mu-subtitle2">Legal</h4>
+        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="mu-footer-bottom">
+    <div class="mu-container">
+      <p class="mu-caption mu-text-dim">© 2026 Coaching Dreams. All rights reserved. Built with MERN Stack.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/919625343392" class="mu-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js"></script>
+
+<!-- ===== BOTTOM INFO BAR ===== -->
+<div class="nb-bottombar" id="bottomBar">
+  <div class="nb-container nb-topbar-inner">
+    <div class="nb-topbar-left">
+      <div class="nb-topbar-item">
+        <div class="nb-topbar-icon-ring">
+          <span class="material-icons">schedule</span>
+        </div>
+        <div class="nb-topbar-text">
+          <span class="nb-topbar-label">Business Hours</span>
+          <span class="nb-topbar-value">Mon to Sat: 10 Am – 10 Pm</span>
+        </div>
+      </div>
+      <div class="nb-topbar-sep"></div>
+      <div class="nb-topbar-item">
+        <div class="nb-topbar-icon-ring">
+          <span class="material-icons">phone</span>
+        </div>
+        <div class="nb-topbar-text">
+          <a href="tel:+919625343392">+91 962 534 3392</a>
+          <a href="tel:+919315344729">+91 931 534 4729</a>
+        </div>
+      </div>
+    </div>
+    <div class="nb-topbar-right">
+      <a href="#" class="nb-social" aria-label="Facebook">
+        <span class="material-icons">facebook</span>
+      </a>
+      <a href="#" class="nb-social" aria-label="YouTube">
+        <span class="material-icons">play_circle</span>
+      </a>
+      <a href="#" class="nb-social" aria-label="LinkedIn">
+        <span class="material-icons">work</span>
+      </a>
+      <div class="nb-topbar-divider"></div>
+      <a href="#contact" class="nb-cta-btn">
+        Get in Touch
+        <span class="material-icons">east</span>
+      </a>
+      <button class="nb-bottombar-close" id="bottomBarClose" aria-label="Dismiss">
+        <span class="material-icons">close</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
